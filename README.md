@@ -1,1 +1,1 @@
-<p><a href="main/project3">CIS255 Project A</a></p>
+<p><a href="/project3">CIS255 Project A</a></p>

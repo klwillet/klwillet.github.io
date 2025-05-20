@@ -1,1 +1,1 @@
-<p><a href="[/project3](https://github.com/klwillet/klwillet.github.io/tree/main/project3#:~:text=project3)">CIS255 Project A</a></p>
+<p><a href="/project3/ch03-proj3.html">CIS255 Project A</a></p>

@@ -6,4 +6,4 @@
   <p><a href="ch08-proj02/ch08-proj02.html">Project D: ch08-proj02 (Extra Credit)</a></p>
   <p><a href="ch08-proj3/ch08-proj3.html">Project D: ch08-proj03 (Extra Credit)</a></p>
   <p><a href="ch09-proj01/ch09-proj01.html">Project D: ch09-proj01</a></p>
-  <p><a href="ch09-proj02/ch09-proj02.html">Project D: ch09-proj02 (Extra Credit)</a></p>
+  <p><a href="ch09-proj02/ch09-proj2.html">Project D: ch09-proj02 (Extra Credit)</a></p>

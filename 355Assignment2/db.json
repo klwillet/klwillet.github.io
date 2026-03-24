@@ -1,0 +1,88 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "name": "Basic Reader",
+            "price": 0,
+            "isPremium": false,
+            "features": [
+                "Highlighting", 
+                "Basic notes"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Annotation Pro",
+            "price": 4.99,
+            "isPremium": true,
+            "features": [
+                "Advanced annotations", 
+                "Theme tagging", "Search"
+            ]
+        },
+        {
+           "id": 3,
+            "name": "Theme Tracker",
+            "price": 3.99,
+            "isPremium": true,
+            "features": [
+                "Theme mapping", 
+                "Literary device tracking"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Note Organizer",
+            "price": 2.99,
+            "isPremium": true,
+            "features": [
+                "Folders", 
+                "Tags", 
+                "Search notes"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Export Toolkit",
+            "price": 1.99,
+            "isPremium": false,
+            "features": [
+                "PDF export", 
+                "Essay-ready notes"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Reading Insights",
+            "price": 3.49,
+            "isPremium": true,
+            "features": [
+                "Reading progress analytics",
+                "Highlight frequency insights",
+                "Theme usage summaries"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Discussion Builder",
+            "price": 2.49,
+            "isPremium": true,
+            "features": [
+                "Question prompts",
+                "Quote collections",
+                "Class discussion prep"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Study Sync",
+            "price": 1.99,
+            "isPremium": true,
+            "features": [
+                "Cross-text note linking",
+                "Comparative theme views",
+                "Semester-long project tracking"
+            ]
+        }
+    ]
+}

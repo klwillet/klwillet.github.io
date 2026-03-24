@@ -16,7 +16,7 @@ const server = http.createServer((req, res) => {
         fs.readFile(path.join(__dirname, "db.json"), "utf8", 
         (err, content)=>{
                 if(err) throw err;
-                res.writeHead(200, {'Content-Type': 'text/html'})
+                res.writeHead(200, {'Content-Type': 'application/json'})
                 res.end(content)
         });
     } 

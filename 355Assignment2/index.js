@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 222;
 
 const server = http.createServer((req, res) => {
     if (req.url === "/"){
-        fs.readFile(path.join(__dirname, "index.html"),
+        fs.readFile(path.join(__dirname, "index.html"), "utf8",
         (err, content)=>{
             if(err) throw err;
             res.writeHead(200, {'Content-Type': 'text/html'})
@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
         });
     }
     else if (req.url === "/api"){
-        fs.readFile(path.join(__dirname, "db.json"), "utf8", 
+        fs.readFile(path.join(__dirname, "db.json"), "utf8",
         (err, content)=>{
                 if(err) throw err;
                 res.writeHead(200, {'Content-Type': 'application/json'})

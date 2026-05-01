@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - LitLens</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700&family=Tinos:wght@400;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <h1>LitLens Admin Panel</h1>
+  <button id="logoutBtn">Logout</button>
+
+  <hr>
+
+  <!-- CREATE Service -->
+  <h2>Create a Service</h2>
+    <form id="createServiceForm" class="form-row">
+        <input id="name" placeholder="Service name" required>
+        <input id="price" placeholder="Price">
+        <input id="features" placeholder="Features (comma separated)">
+        <select id="isPremium">
+            <option value="false">Free</option>
+            <option value="true">Premium</option>
+        </select>
+        <button type="Submit">Add</button>
+    </form>
+  <p id="createMsg" style="color:green;"></p>
+
+  <hr>
+
+  <!-- ALL Services -->
+  <h2>All Services</h2>
+  <div id="servicesList"></div>
+
+  <!-- EDIT SERVICE (hidden until user clicks Edit) -->
+  <div id="editSection">
+    <h2>Edit Service</h2>
+
+    <input type="hidden" id="editServiceId">
+
+    <input id="editServiceName" placeholder="Updated name">
+    <input id="editServicePrice" placeholder="Updated price">
+    <input id="editServiceFeatures" placeholder="Features (comma separated)">
+
+    <select id="editServicePremium">
+        <option value="">-- No change --</option>
+        <option value="true">Premium</option>
+        <option value="false">Free</option>
+    </select>
+
+    <button id="saveEditBtn">Save</button>
+    <button id="cancelEditBtn">Cancel</button>
+
+    <p id="editMsg"></p>
+  </div>
+
+  <script src="js/services.js"></script>
+
+  <style>
+    .container {
+      margin: 20px;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter Tight", sans-serif;
+      background: #edefeb;
+      color: #2b2b2b;
+    }
+
+    section {
+      padding: 20px 25px;
+    }
+
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    input, select {
+      padding: 8px 12px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      font-family: "Courier Prime", monospace;
+    }
+
+    button {
+      padding: 8px 14px;
+      border-radius: 20px;
+      border: none;
+      background: #efe2c3;
+      color: #8b6f2c;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+        opacity: 0.9;
+    }
+
+    #servicesList {
+      display: grid;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .service-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      padding: 10px 14px;
+      border-radius: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+
+    .service-info {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-family: "Courier Prime", monospace;
+    }
+
+    .attr {
+      position: relative;
+      padding-right: 10px;
+    }
+
+    .attr:not(:last-child)::after {
+      content: "|";
+      position: absolute;
+      right: -5px;
+      color: #bbb;
+    }
+
+    .service-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    #editSection {
+      display: none;
+      padding: 20px 25px;
+      background: #f7f6f2;
+      border-top: 1px solid #ddd;
+    }
+
+    #features {
+      width: 250px;
+    }
+    </style>
+</div>
+</body>
+</html>

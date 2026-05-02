@@ -10,7 +10,7 @@ const serviceSchema = mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId, 
       // ObjectId is MongoDB's built-in unique ID type — links this service to a specific User document
       
-      required: true,                       
+      required: false,                       
       // A service cannot exist without an owner
       
       ref: 'User',                          
